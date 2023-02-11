@@ -9,10 +9,18 @@ class PluginController
         //die("ok" . var_dump($params));
     }
 
+    public function test($params)
+    {
+        if (!isset($_COOKIE[$params])) {
+            echo "Cookie named '" . $params . "' is not set!";
+        } else {
+            echo "Cookie '" . $params . "' is set!<br>";
+            echo "Value is: " . $_COOKIE[$params];
+        }
+    }
+
     public function login($params)
     {
-
-
         if (!PBSController::cfun()->requireOnlyPost())
             makeResponse(400, "Bad Request", false, [
                 "err" => "you just need a post request",

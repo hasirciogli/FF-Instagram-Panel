@@ -62,6 +62,7 @@ class Router
             return false;
 
         if ($zName == Router::AnalyzeMiddlewareUri()[0] && !Router::CheckIfIsApi(configs_api_prefix)) {
+            Router::$isLoaded = true;
 
             if (!$checkFunction) {
                 $inCorrectCallback();
@@ -69,7 +70,6 @@ class Router
             }
 
             $correctCallback();
-            Router::$isLoaded = true;
         } else if (Router::CheckIfIsApi(configs_api_prefix)) {
             ApiRouter::Run();
             Router::$isLoaded = true;

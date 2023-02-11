@@ -8,5 +8,14 @@ use UserModel\UserModel;
 
 class UserController extends UserModel
 {
-    
+    public function isLogged()
+    {
+        return false;
+    }
+
+
+    public static function cfun()
+    {
+        return new UserController();
+    }
 }

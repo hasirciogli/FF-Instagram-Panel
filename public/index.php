@@ -54,6 +54,12 @@ Router::Middleware("storage", true, function () {
 
 });
 
+Router::Middleware("u", UserController::cfun()->isLogged(), function () {
+    View::Show("u/index", pageTypes::PAGE_TYPE_NORMAL);
+}, function () {
+    View::Show("u/login", pageTypes::PAGE_TYPE_NORMAL);
+});
+
 if (false) {
     Router::get("/register", function () {
         Router::Route("login");
