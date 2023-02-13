@@ -30,12 +30,21 @@ class PBSController
 
 
 
-    public function checkNullOrBlankInPost($dataArray)
+    public function checkNullOrBlankInPost($dataArray, $len = -1)
     {
        foreach ($dataArray as $val)
        {
             if(!isset($_POST[$val]) || $_POST[$val] == null || $_POST[$val] == "")
                 return false;
+       }
+
+       if ($len > -1)
+       {
+           foreach ($dataArray as $val)
+           {
+               if (strlen($_POST[$val]) < $len )
+                   return false;
+           }
        }
 
         return true;

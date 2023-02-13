@@ -23,7 +23,7 @@ switch ($ttk[1]) {
                 header($_SERVER["SERVER_PROTOCOL"] . " 200 OK");
                 header("Cache-Control: public"); // needed for internet explorer
 
-                header('application/javascript');
+                header('Content-Type: application/javascript');
 
                 header("Content-Transfer-Encoding: Binary");
                 header("Content-Length:" . filesize($attachment_location));
@@ -81,16 +81,18 @@ switch ($ttk[1]) {
     case "image":
         {
             $attachment_location = "";
-            $attachment_location .= configs_site_rootfolder . "/storage/fonts";
+            $attachment_location .= configs_site_rootfolder . "/storage/images";
             $attachment_location .= $switchUri;
 
             if (file_exists($attachment_location)) {
                 header($_SERVER["SERVER_PROTOCOL"] . " 200 OK");
                 header("Cache-Control: public"); // needed for internet explorer
 
-                header("Content-type: text/plain");
+                $zArr = explode(".", $switchUri);
 
-                header("Content-Transfer-Encoding: Binary");
+
+                header('Content-Type: image/' . end($zArr));
+
                 header("Content-Length:" . filesize($attachment_location));
                 readfile($attachment_location);
             } else {

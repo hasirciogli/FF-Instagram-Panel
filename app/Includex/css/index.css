@@ -35,3 +35,7 @@ html, body {
 .ffonts-nunito {
     font-family: 'Nunito', sans-serif;
 }
+
+* {
+    scroll-behavior: smooth;
+}

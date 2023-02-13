@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(0);
+error_reporting(E_ALL);
 
 //die(var_dump($_SERVER));
 //die (phpinfo());
@@ -57,7 +57,7 @@ Router::Middleware("storage", true, function () {
 Router::Middleware("u", UserController::cfun()->isLogged(), function () {
     View::Show("u/index", pageTypes::PAGE_TYPE_NORMAL);
 }, function () {
-    View::Show("u/login", pageTypes::PAGE_TYPE_NORMAL);
+    View::Show("u/auth", pageTypes::PAGE_TYPE_NORMAL);
 });
 
 if (false) {

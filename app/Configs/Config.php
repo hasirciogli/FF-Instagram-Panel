@@ -1,7 +1,7 @@
 <?php
 
 define("configs_site_rootfolder", $_SERVER["DOCUMENT_ROOT"]);
-define("configs_site_favicon", '<link rel="icon" type="image/x-icon" href="https://abload.de/img/ataturk-rozetleri3sscw2.png">');
+define("configs_site_favicon", '<link rel="icon" type="image/png" href="https://' . $_SERVER['SERVER_NAME'] . '/storage/image/site-images/ff-logo.png">');
 
 
 define("configs_site_version", "1.1");
