@@ -2,11 +2,11 @@
 ?>
 
 
-<div class="flex flex-col xl:flex-row justify-start w-full overflow-hidden">
+<div class="flex h-full flex-col xl:flex-row justify-start w-full overflow-hidden">
     <div class="flex w-full xl:w-8/12 p-5 overflow-hidden">
-        <div class="flex flex-col w-full bg-white rounded-md border border-1 border-slate-200 shadow-md overflow-hidden">
+        <div class="flex flex-col min-h-[650px] h-[650px] max-h-[650px] overflow-hidden scroll-soft w-full bg-white rounded-md border border-1 border-slate-200 shadow-md">
             <h1 class="p-3 text-md font-bold overflow-hidden border-b border-slate-200">Yeni Sipariş</h1>
-            <div class="w-full h-full overflow-hidden">
+            <div class="w-full min-h-[600px] h-[600px] max-h-[600px] overflow-hidden scroll-soft">
 
                 <!-- Kategori: -->  <div class=" w-full mx-auto p-4 min-h-[120px] max-h-[120px]">
                     <div class="h-[25px]">

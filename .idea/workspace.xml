@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fdb6c7-0fef-427e-8285-27672cfedf18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/backend/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Includex/js/userside/sidebar_collapser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Views/u/dpages/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Views/u/dpages/pricelist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/images/site-images/ff-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/internal_funcs/PluginBaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/internal_funcs/PluginBaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/vfuns/userController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Configs/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Configs/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/SessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/SessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Database/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/FFunctions/FCrypter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/FFunctions/FCrypter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Includex/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/Includex/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Views/u/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Views/u/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Views/u/dpages/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Views/u/dpages/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/View/Views/u/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Views/u/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/site-images/.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/storagemanager.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/storagemanager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/user-images/.text" beforeDir="false" afterPath="$PROJECT_DIR$/storage/images/user-images/.text" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +96,7 @@
       <workItem from="1676193231391" duration="11103000" />
       <workItem from="1676217764787" duration="650000" />
       <workItem from="1676220546715" duration="2499000" />
-      <workItem from="1676274861653" duration="11700000" />
+      <workItem from="1676274861653" duration="12992000" />
     </task>
     <servers />
   </component>

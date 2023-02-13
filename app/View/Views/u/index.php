@@ -1,6 +1,7 @@
 <?php
 
 $UC = \UserController\UserController::cfun();
+$SC = \SessionController\SessionController::cfun();
 
 if (!$UC->isLogged())
     \Router\Router::Route("/u/login");
@@ -19,6 +20,10 @@ if (isset($lUri) && strlen($lUri) > 0 && $lUri != "" && $lUri != "/")
 {
     switch ($lUri)
     {
+        case "logout":
+            if ($UC->isLogged())
+                $SC->Close();
+            \Router\Router::Route("u/");
         case "add":
             $needReg = __DIR__ . "/dpages/add.php";
             break;
@@ -87,10 +92,9 @@ else{
     <div class="w-10 h-10 bg-blue-600 rounded-full animate-bounce"></div>
 </div>
 <div class="flex min-h-screen hidden" id="content">
-    <div class="flex w-full h-sceen bg-white">
+    <div class="flex w-full h-screen bg-white">
 
-
-        <div class="flex flex-col min-w-[100px] max-w-[100px] h-screen bg-white border-r border-r-slate-200" id="left-sidebar">
+        <div class="flex flex-col min-w-[100px] max-w-[100px] h-screen bg-white border-r border-r-slate-200 hidden md:flex" id="left-sidebar">
             <div class="flex flex-row w-full min-h-[100px] overflow-hidden">
                 <h1 class="min-w-[100px] h-full flex items-center justify-center text-5xl font-semibold" id="ffpanel-title">FF</h1>
                 <h1 class="min-w-[100px] h-full flex items-center justify-center text-5xl font-semibold opacity-0" id="ffpanel-title-collapsed">FFPanel</h1>
@@ -165,11 +169,11 @@ else{
         </div>
 
 
-        <div class="flex flex-col w-full h-screen bg-slate-100">
+        <div class="flex flex-col w-full min-h-screen bg-slate-100">
 
 
             <div class="flex w-full h-[100px] bg-white border-b border-1 border-b-slate-200">
-                <div class="flex h-[100px] min-w-[100px] w-[100px] items-center justify-center text-[#4338ca] hover:cursor-pointer" id="sidebar-collapser">
+                <div class="flex h-[100px] min-w-[100px] w-[100px] items-center justify-center text-[#4338ca] hover:cursor-pointer hidden md:flex" id="sidebar-collapser">
                     <ion-icon name="caret-forward-outline" class="text-3xl"></ion-icon>
                 </div>
                 <div class="flex items-center justify-end w-full h-[100px]">
